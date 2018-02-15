@@ -4,7 +4,7 @@
 ### Clonar el repositori
 
 ```
-$ git clone https://github.com/rogerforner/tinkeringJQuery.git
+$ git clone https://github.com/rogerforner/tinkeringWCAG.git
 ```
 
 ### Instal·lar dependències

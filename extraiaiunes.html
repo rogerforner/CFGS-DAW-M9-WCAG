@@ -17,23 +17,30 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/twbs.css">
   <!-- Font Awesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <!-- Altres -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <style>
-  </style>
+  header {
+    background-image: url("  https://images.unsplash.com/photo-1507851191112-1bb853d191fb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea22a92bdd05ed12542fef6af1a02fd1&auto=format&fit=crop&w=1350&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
 </head>
 
-<body>
+<body onload="tempsExipre();">
   <!-- ENCAPÇALAMENT DE LA PÀGINA WEB -->
-  <header class="parallax shadow-all-3i" id="splash">
+  <header alt="imatge fons de capçalera" onclick="reFirstImg ();" class="parallax shadow-all-3i" id="splash">
     <section class="color-light-o">
       <div class="container text-dark" id="main-header">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-8">
             <div class="text-center" id="header-logo">
-              <img src="assets/img/logo.png" width="auto" height="250" alt="Clínica Dental Dr. Pomar">
+              <a alt="Extra-iaiunes logo de capçalera" href="guideline1.1.1.1.html#section2"><img src="https://images.unsplash.com/photo-1465125792985-0dd0cf761dca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f2fb41b2dd36f08b46d3e0e1d2da740f&auto=format&fit=crop&w=1133&q=80" class="rounded-circle"width="auto" height="250" ></a>
             </div>
-            <h1 class="display-4 text-center">Ice Cream Montsià</h1></div>
+            <h1 class="display-4 text-center">Extra-iaiunes! <i class="fas fa-wheelchair"></i></h1></div>
         </div>
       </div>
     </section>
@@ -41,21 +48,54 @@
 
   <!-- BARRA DE NAVEGACIÓ -->
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Ice Cream Montsià</a>
+    <a class="navbar-brand" href="#">Associació yayitos FC</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a id="rf" class="nav-item nav-link" href="index.html">Inici<span class="sr-only">(current)</span></a>
+        <a id="rf" class="nav-item nav-link" href="index.html">Inici</a>
         <a id="jl" class="nav-item nav-link" href="xxx.html">Viatges</a>
-        <a id="eb" class="nav-item nav-link" href="xxx.html">Extra-iaiunes</a>
+        <a id="eb" class="nav-item nav-link" href="extraiaiunes.html">Extra-iaiunes<span class="sr-only">(current)</span></a>
       </div>
     </div>
   </nav>
 
   <!-- COS DE LA PÀGINA WEB -->
   <main>
+    <div class="container">
+      <h2 class="mt-4">Hola Caracola Tots podem divertir-nos amb els avis</h2>
+      <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <!-- Aqui veiem el punt 2.2.2-->
+      <button id="stop">Parar</button>
+      <button id="start">Baixar</button>
+      <button id="up">Muntar</button>
+      <div id="flip">Activitats disponibles</div>
+      <div id="panel">
+        <h5>Petanca</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h5>Parchis</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h5>Birles</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h5>Pesca</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h5>Costura</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h5>Cartes</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h5>Escacs</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <!-- Aqui veiem els punts 1.1.2 & 1.1.3-->
+      <div class="form-group">
+        <label for="#"></label>
+        <input placeholder="El teu nom"type="text" class="form-control" id="">
+        <button data-placement="right" data-toggle="tooltip" title="Boto per a enviar el formulari"class="mt-2 btn btn-info"type="button" name="button">Enviar</button>
+      </div>
+    </div>
   </main>
 
   <!-- PEU DE PÀGINA -->
@@ -73,7 +113,7 @@
   <!-- Bootstrap + JQuery -->
   <script src="assets/js/twbs.js"></script>
   <!-- El nostre Script -->
-  <script src="assets/js/rf.js" charset="utf-8"></script>
+  <script src="assets/js/eb.js" charset="utf-8"></script>
 </body>
 
 </html>

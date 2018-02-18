@@ -37,7 +37,7 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 /* Mis colores */
-$cream: #ff9eb9 !default;
+$cream: #e9ecef !default;
 
 $colors: (
   blue:      $blue,
@@ -76,13 +76,13 @@ $theme-color-interval: 8% !default;
 //# Selecció (ratolí)
 //# ---------------------------------------------------------------------
 *::-moz-selection { /* Code for Firefox */
-  color: $white;
-  background: $cream;
+  color: $gray-900;
+  background: $yellow;
 }
 
 *::selection {
-  color: $white;
-  background: $cream;
+  color: $gray-900;
+  background: $yellow;
 }
 
 //# Color de fons
@@ -91,6 +91,6 @@ $theme-color-interval: 8% !default;
   background-color: $cream;
 }
 .bg-cream-dark {
-  background-color: darken($cream, 20%);
+  background-color: darken($cream, 80%);
   color: $white;
 }

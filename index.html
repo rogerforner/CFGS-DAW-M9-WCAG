@@ -36,6 +36,8 @@
       <div class="container text-dark" id="main-header">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-8">
+             <!-- 2.4.2 punt 2
+             Creem un títol H1 -->
             <h1 class="display-4 text-center">Associació yayitos FC<br><i class="fas fa-wheelchair fa-2x mt-3"></i></h1></div>
         </div>
       </div>
@@ -50,6 +52,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
+        <!-- 2.4.4 punt 3
+        El text de l'enllaç determina l'acció d'aquest -->
         <a id="rf" class="nav-item nav-link" href="index.html">Inici<span class="sr-only">(current)</span></a>
         <a id="jl" class="nav-item nav-link" href="viatges.html">Viatges</a>
         <a id="eb" class="nav-item nav-link" href="extraiaiunes.html">Extra-iaiunes</a>
@@ -58,7 +62,50 @@
   </nav>
 
   <!-- COS DE LA PÀGINA WEB -->
-  <main>
+  <main class="container">
+    <!-- 2.4.1 punt 1
+    Permetem que es saltin blocs de contingut mitjançant les "àncores" -->
+    <nav class="nav">
+      <a class="nav-link" href="#quiSom">Qui som?</a>
+      <a class="nav-link" href="#queFem">Què fem?</a>
+      <a class="nav-link" href="#pqHoFem">Per què ho fem?</a>
+    </nav>
+
+    <div id="quiSom" class="row align-items-center my-5">
+      <div class="col-md-6">
+        <img src="https://source.unsplash.com/In4XVKhYaiI" alt="Imatge de Unsplash, @oldskool2016" class="img-thumbnail">
+      </div>
+      <div class="col-md-6">
+        <!-- 2.4.2 punt 2
+        Creem un títol H2 perquè el header té H1 -->
+        <h2>Qui som?</h2>
+        <p class="lead text-justify">Pellentesque vitae turpis tincidunt, commodo est ut, tempor ante. Fusce malesuada lorem magna, a lobortis est ullamcorper sit amet. Aenean iaculis diam sed tellus venenatis viverra. Donec fermentum placerat gravida. Donec interdum eu nisi ac ultricies.</p>
+      </div>
+    </div>
+
+    <div id="queFem" class="row align-items-center my-5">
+        <div class="col-md-6">
+          <!-- 2.4.2 punt 2
+          Creem un títol H2 perquè el header té H1 -->
+          <h2>Què fem?</h2>
+          <p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur interdum ligula et porttitor. Donec malesuada, est at varius varius, erat arcu laoreet libero, vel aliquet lacus tellus vitae ipsum. Morbi mollis leo venenatis, laoreet diam non, finibus neque. Morbi ullamcorper urna sed sapien gravida consectetur. Vestibulum blandit auctor felis sit amet sodales. Duis blandit eu erat molestie suscipit. Sed rhoncus ligula nec leo vulputate, ac commodo urna sollicitudin. Morbi ipsum ipsum, cursus sed nulla sed, blandit dictum est. Praesent pretium id justo vel tempus. Donec ornare sodales odio, a venenatis massa sodales sollicitudin. Pellentesque vitae tincidunt odio, congue placerat dolor. Phasellus molestie eget arcu quis fermentum. Ut bibendum odio et felis sollicitudin, sit amet fringilla ipsum accumsan. Maecenas sagittis nisi eu molestie imperdiet. Etiam lectus arcu, venenatis nec odio hendrerit, sagittis varius tellus. Fusce iaculis venenatis purus non finibus.</p>
+        </div>
+      <div class="col-md-6">
+        <img src="https://source.unsplash.com/7A1pZTvuNWw" alt="Imatge de Unsplash, @khai_visuals" class="img-thumbnail">
+      </div>
+    </div>
+
+    <div id="pqHoFem" class="row align-items-center my-5">
+      <div class="col-md-6">
+        <img src="https://source.unsplash.com/y0I85D5QKvs" alt="Imatge de Unsplash, @alexharvey" class="img-thumbnail">
+      </div>
+      <div class="col-md-6">
+        <!-- 2.4.2 punt 2
+        Creem un títol H2 perquè el header té H1 -->
+        <h2>Per què ho fem?</h2>
+        <p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur interdum ligula et porttitor. Donec malesuada, est at varius varius, erat arcu laoreet libero, vel aliquet lacus tellus vitae ipsum. Morbi mollis leo venenatis, laoreet diam non, finibus neque. Morbi ullamcorper urna sed sapien gravida consectetur.</p>
+      </div>
+    </div>
   </main>
 
   <!-- PEU DE PÀGINA -->
@@ -66,7 +113,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <p class="py-4 my-0 text-right">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2018 Associació yayitos FC. Tots els drets reservats.</p>
+          <p class="py-4 my-0 text-right">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2018 Associació yayitos FC. Tots els drets reservats.br<br>
+          <!-- 2.4.5 punt 4
+          Creem un enllaç al Mapa Web, amb el que facilitar localitzar el contingut de les pàgines -->
+          <a href="mapa.html"><i class="fas fa-sitemap"></i> Mapa web</a></p>
         </div>
       </div>
     </div>
@@ -79,4 +129,11 @@
   <script src="assets/js/rf.js" charset="utf-8"></script>
 </body>
 
+<!--
+NO ES FA RES PERQUÈ O BÉ JA ESTÀ FET O NO S'APLICA
+- 2.3.1 punt 1
+  El nostre lloc web no conté cap tipus d'animació ni càrrega de qualsevol element que pugui causar
+  problemes a epil·lèptics.
+
+-->
 </html>

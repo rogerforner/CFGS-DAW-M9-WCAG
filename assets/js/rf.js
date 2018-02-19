@@ -10,3 +10,16 @@ $("nav a#rf").addClass("active");
 function lectura() {
   $("#lectura").addClass("bg-dark text-white");
 }
+
+
+
+
+
+
+
+
+
+
+$(function () {
+  $('[tooltip="tooltip"]').tooltip()
+})

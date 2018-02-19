@@ -84,7 +84,7 @@ Es defineix l'idioma de la pàgina -->
         <p class="lead text-justify">Pellentesque vitae turpis tincidunt, commodo est ut, tempor ante. Fusce malesuada lorem magna, a lobortis est ullamcorper sit amet. Aenean iaculis diam sed tellus venenatis viverra. Donec fermentum placerat gravida. Donec interdum eu nisi ac ultricies.</p>
         <!-- 3.2.2 punt 1 (mirar el modal al final de la pàgina)
         Es crea un botó per advertir a l'usuari de que si duu a terme l'acció proposada es modificarà la vista -->
-        <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-moon"></i> Lectura</button>
+        <button type="button" class="btn btn-dark btn-sm" data-placement="right" tooltip="tooltip" data-toggle="modal" title="Boto per modificar l'estil de lectura"  data-target="#exampleModal"><i class="fas fa-moon"></i> Lectura</button>
       </div>
     </div>
 
@@ -151,7 +151,7 @@ Es defineix l'idioma de la pàgina -->
                 <input type="text" class="form-control" id="inputZip">
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" data-placement="left" tooltip="tooltip" title="Boto per a enviar el formulari" class="btn btn-primary">Sign in</button>
           </form>
       </div>
     </div>
@@ -178,7 +178,7 @@ Es defineix l'idioma de la pàgina -->
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Lectura nocturna</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" data-placement="right" tooltip="tooltip" title="Boto per a tancar el modal" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -186,8 +186,8 @@ Es defineix l'idioma de la pàgina -->
           Si pitja el botó es visualitzarà el text a sobre d'un fons fosc i, aquest mateix, serà de de color blanc.
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">No fer res</button>
-          <button type="button" class="btn btn-dark" onclick="lectura()">Endavant</button>
+          <button type="button" data-placement="right" tooltip="tooltip" title="Boto per a cancelar" class="btn btn-secondary" data-dismiss="modal">No fer res</button>
+          <button type="button" class="btn btn-dark" onclick="lectura()" data-placement="right" tooltip="tooltip" title="Boto per a seguir endavant">Endavant</button>
         </div>
       </div>
     </div>

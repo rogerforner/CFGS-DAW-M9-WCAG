@@ -77,11 +77,14 @@ Es defineix l'idioma de la pàgina -->
       <div class="col-md-6">
         <img src="https://source.unsplash.com/In4XVKhYaiI" alt="Imatge de Unsplash, @oldskool2016" class="img-thumbnail">
       </div>
-      <div class="col-md-6">
+      <div id="lectura" class="col-md-6">
         <!-- 2.4.2 punt 2
         Creem un títol H2 perquè el header té H1 -->
         <h2>Qui som?</h2>
         <p class="lead text-justify">Pellentesque vitae turpis tincidunt, commodo est ut, tempor ante. Fusce malesuada lorem magna, a lobortis est ullamcorper sit amet. Aenean iaculis diam sed tellus venenatis viverra. Donec fermentum placerat gravida. Donec interdum eu nisi ac ultricies.</p>
+        <!-- 3.2.2 punt 1 (mirar el modal al final de la pàgina)
+        Es crea un botó per advertir a l'usuari de que si duu a terme l'acció proposada es modificarà la vista -->
+        <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-moon"></i> Lectura</button>
       </div>
     </div>
 
@@ -125,6 +128,28 @@ Es defineix l'idioma de la pàgina -->
       </div>
     </div>
   </footer>
+
+  <!-- MODALS -->
+  <!-- 3.2.2 punt 1 (modal) -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Lectura nocturna</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Si pitja el botó es visualitzarà el text a sobre d'un fons fosc i, aquest mateix, serà de de color blanc.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No fer res</button>
+          <button type="button" class="btn btn-dark" onclick="lectura()">Endavant</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- SCRIPTS -->
   <!-- Bootstrap + JQuery -->

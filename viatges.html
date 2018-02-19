@@ -59,9 +59,25 @@
 
   <!-- COS DE LA PÀGINA WEB -->
   <main class="container">
+    <!-- 1.4.2 punt 2
+    Com hi ha un àudio que té uan reproducció de més de 3 segons, facilitem els controls per tal de que pugui
+    ser pausat o bé auturat o iniciat -->
+    <audio class="mt-5" controls autoplay>
+      <source src="assets/audio/Vivaldi_Summer_Mvt_1_Allegro_non_molto.mp3" type="audio/mpeg">
+      <source src="assets/audio/Vivaldi_Summer_Mvt_1_Allegro_non_molto.ogg" type="audio/ogg">
+      <source src="assets/audio/Vivaldi_Summer_Mvt_1_Allegro_non_molto.wav" type="audio/wav">
+      El teu navegador no és compatible amb el reproductor. Actualitza'l!
+    </audio>
+
     <div id="mPossibilitats" class="row align-items-center my-5">
         <div class="col-md-6">
-          <img src="https://source.unsplash.com/-8ttvM3Ca94" alt="Imatge de Unsplash, @bbergher" class="img-thumbnail">
+          <!-- 1.4.5 punt 5
+          Nosaltres hem decidit no emprar imatges amb text per descriure el contingut que precideixi. Això ho fem
+          perquè sabem que aquest text (dibuixat) no pot ser llegit per cap tipus de programari. En el seu lloc emprem
+          les capçaleres "Hn".
+          Per donar un gir a aquest apartat, el que sí farem serà afegir un atribut "title" a un text, amb el que
+          descriurem la imatge de tal manerea que també es proporcioni informació del contingut que la precedeix. -->
+          <img src="https://source.unsplash.com/-8ttvM3Ca94" alt="Imatge de Unsplash, @bbergher" title="La infinitat d'una carreta que representa sobre la qual no es veu el final (infinitat de destins)." class="img-thumbnail">
         </div>
         <div class="col-md-6">
           <!-- 1.3.1 punt 1
@@ -76,22 +92,38 @@
           <hr>
 
           <ul>
-            <li>Àsia</li>
-            <li>Àfrica</li>
-            <li>Amèrica</li>
-            <li>Europa</li>
-            <li>Oceania</li>
+            <!-- 1.4.1 punt 1
+            Els enllaços es distingeixen amb un color específic i, també, són subratllats, quan es poses a sobre s'aquests. -->
+            <li><a href="https://ca.wikipedia.org/wiki/%C3%80sia">Àsia</a></li>
+            <li><a href="https://ca.wikipedia.org/wiki/%C3%80frica">Àfrica</a></li>
+            <li><a href="https://ca.wikipedia.org/wiki/Am%C3%A8rica">Amèrica</a></li>
+            <li><a href="https://ca.wikipedia.org/wiki/Europa">Europa</a></li>
+            <li><a href="https://ca.wikipedia.org/wiki/Oceania">Oceania</a></li>
           </ul>
         </div>
       </div>
 
-      <div id="queFem" class="row align-items-center my-5">
+      <div id="ingaVa" class="row align-items-center my-5">
           <div class="col-md-6">
-            <h2>Què fem?</h2>
-            <p lang="la" class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur interdum ligula et porttitor. Donec malesuada, est at varius varius, erat arcu laoreet libero, vel aliquet lacus tellus vitae ipsum. Morbi mollis leo venenatis, laoreet diam non, finibus neque. Morbi ullamcorper urna sed sapien gravida consectetur. Vestibulum blandit auctor felis sit amet sodales. Duis blandit eu erat molestie suscipit. Sed rhoncus ligula nec leo vulputate, ac commodo urna sollicitudin. Morbi ipsum ipsum, cursus sed nulla sed, blandit dictum est. Praesent pretium id justo vel tempus. Donec ornare sodales odio, a venenatis massa sodales sollicitudin. Pellentesque vitae tincidunt odio, congue placerat dolor. Phasellus molestie eget arcu quis fermentum. Ut bibendum odio et felis sollicitudin, sit amet fringilla ipsum accumsan. Maecenas sagittis nisi eu molestie imperdiet. Etiam lectus arcu, venenatis nec odio hendrerit, sagittis varius tellus. Fusce iaculis venenatis purus non finibus.</p>
+            <h2>Apunta't!</h2>
+            <form>
+              <div class="form-group">
+                <!-- 1.3.1 punt 2
+                Emprem etiquetes "label" associades a camps "input" específics.
+                També agrupem aquestes dintre de "div". -->
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                <small id="emailHelp" class="form-text text-muted">Proporciona'ns el teu email.</small>
+              </div>
+              <div class="form-group">
+                <label for="nomTeu">EL teu nom</label>
+                <input type="text" class="form-control" id="nomTeu" placeholder="Nom sencer">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         <div class="col-md-6">
-          <img src="https://source.unsplash.com/7A1pZTvuNWw" alt="Imatge de Unsplash, @khai_visuals" class="img-thumbnail">
+          <img src="https://source.unsplash.com/EwMybq5YAus" alt="Imatge de Unsplash, @jeisblack" class="img-thumbnail">
         </div>
       </div>
   </main>
@@ -117,4 +149,19 @@
   <script src="assets/js/jl.js" charset="utf-8"></script>
 </body>
 
+<!--
+NO ES FA RES PERQUÈ O BÉ JA ESTÀ FET O NO S'APLICA
+- 1.4.3 punt 3
+  Els textos mantenen un contrast definit pels professionals de Bootstrap, els quals ja tenen en compte les tècniques d'accessibilitats.
+  Com els petits canvis que hem dut a terme sobre alguns colors han estat molt petits, el contrast no es veu afectat.
+  Així doncs, en aquest cas només podem dir que hem tingut en compte que els textos foscos estiguin sobre fons molt clars o bé a l'inrevés,
+  com en el cas de la pàgina índex quan modifiquem el color de la lectura.
+- 1.4.4 punt 4
+  Si s'efectua un zoom (fins 200%) a la nostra pàgina Web aquest afecta de tal manera que el text es ampliat sense que es vegi dificultada
+  la seva lectura.
+  També es duran endavant els estils CSS Responsive del propi Bootstrap.
+- 2.4.7 punt 6
+  Donat que emprem un Framework, aquest ja va preparat de les bones pràctiques d'accessibilitat.
+  Si emprem la tecla del tabulador, aquesta es desplaça a través de tots els enllaços i inputs de la pàgina en la que estiguem situats.
+-->
 </html>

@@ -6,4 +6,8 @@ $("nav a#jl").addClass("active");
 
 $(function () {
   $('[tooltip="tooltip"]').tooltip()
-})
+});
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+});

@@ -70,6 +70,12 @@
       <source src="assets/audio/Vivaldi_Summer_Mvt_1_Allegro_non_molto.wav" type="audio/wav">
       El teu navegador no és compatible amb el reproductor. Actualitza'l!
     </audio>
+    <!-- 1.2.1  punt 1
+      Text complementari per al audio tant si el navegador no és compatible amb l'audio com per a persones amb dèficit auditiu.-->
+    <button class="btn btn-secondary" onclick="checkClick('#audio1')">audio desc.</button>
+    <div class="row" id="audio1">
+      Per acompanyar aquesta secció s'havía triat la peça "Summer" de Vivldi, ja que tot i tenir un inici tranquil, al poc temps sánima i es va pensar que potser era una sintonía que podría acompanyar molt bé per als viatges, ja que comencen tranquils i després sánimen, tenint moments de pau cuan un descansa o està dinant, però també hi ha moments animats on descubrim nous indrets i experiències.
+    </div>
 
     <div id="mPossibilitats" class="row align-items-center my-5">
         <div class="col-md-6">
@@ -102,6 +108,20 @@
             <li><a href="https://ca.wikipedia.org/wiki/Europa">Europa</a></li>
             <li><a href="https://ca.wikipedia.org/wiki/Oceania">Oceania</a></li>
           </ul>
+        </div>
+      </div>
+      <div class="row">
+        <!-- 1.2.2 punt 3
+          El video te informació sincronitzada amb subtitols que incorpora youtube i a més va explicat amb llenguatge de signes per a persones sordes.
+         -->
+        <div class="col-md-6">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/rAawV0_USSE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p class="mb-0">Arousa Norte es una població costera ubicada en la provincia de A Coruña on els nostres familiars podrán passar una agradable estada i gaudir de la platja, els paissatges, la gastronomía i la tranquilitat de la zona.</p>
+          </blockquote>
+
         </div>
       </div>
 
@@ -149,6 +169,7 @@
   <script src="assets/js/twbs.js"></script>
   <!-- El nostre Script -->
   <script src="assets/js/jl.js" charset="utf-8"></script>
+  <script src="assets/js/xl.js"></script>
 </body>
 
 <!--

@@ -1,26 +1,33 @@
 > M09 - Disseny d'interfícies web, Institut Montsià. DAW
 
-## Instal·lació
-### Clonar el repositori
+# Instal·lació
+
+## Clonar el repositori
 
 ```
 $ git clone https://github.com/rogerforner/tinkeringWCAG.git
 ```
 
-### Instal·lar dependències
+### Grup 3
+
+- Enric Beltran.
+- Javier López.
+- Roger Forner.
+
+## Instal·lar dependències
 
 ```
 $ npm install
 ```
 
-## Executar servidor
+# Executar servidor
 
 ```
 $ php -S localhost:8000
 ```
 
 
-## Compilar SASS
+# Compilar SASS
 
 *Només es compilaran els .scss*
 
@@ -36,8 +43,11 @@ Per no haver d'executar la comanda anterior cada cop que editem els fitxers:
 $ gulp watch
 ```
 
-## Grup 3
+# Publicar a GitHub Pages
 
-- Enric Beltran.
-- Javier López.
-- Roger Forner.
+```
+$ git checkout gh-pages
+$ git rebase master
+$ git push origin gh-pages
+$ git checkout master
+```

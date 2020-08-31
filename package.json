@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/rogerforner/tinkeringJQuery#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.2.1",
     "popper.js": "^1.13.0"
   },
